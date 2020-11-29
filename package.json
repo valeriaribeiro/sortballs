@@ -1,0 +1,21 @@
+{
+  "name": "ball-sort",
+  "version": "0.1.0",
+  "description": "",
+  "main": "ballSort.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "lint": "prettier"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1",
+    "prettier": "^2.2.0"
+  }
+}
