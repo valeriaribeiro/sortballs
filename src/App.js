@@ -1,22 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import Bucket from './Bucket.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Bucket bucket={[1,1,3,4]}/>
+        <Bucket bucket={[1,2,3,3]}/>
+        <Bucket bucket={[1,2,4,4]}/>
+        <Bucket bucket={[2,2,3,4]}/>
       </header>
     </div>
   );
