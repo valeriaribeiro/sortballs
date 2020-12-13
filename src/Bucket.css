@@ -1,3 +1,7 @@
 .bucket {
     display: inline-block;
 }
+
+.canvas-bucket {
+    outline: black 1px solid;
+}

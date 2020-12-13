@@ -6,16 +6,12 @@ class SortBalls {
   }
 
   static generate(amount, bucketSize) {
-    const self = this;
-    const balls = Array.from(new Array(amount), (val, index) => index + 1);
-    let ballsStore = [];
-
-    // generate balls
-    for (let ball of balls) {
-      for (let i = 0; i < bucketSize; i++) {
-        ballsStore.push(ball);
-      }
+    let ballsStore = []
+    for (let i = 0; i<amount; i++) {
+      let ballsGroup = Array.from(new Array(bucketSize), (val, index) => i);
+      ballsStore = [...ballsStore, ...ballsGroup];
     }
+
     // shuffle
     ballsStore = ballsStore.sort(() => Math.random() - 0.5);
 
@@ -63,4 +59,4 @@ class SortBalls {
   }
 }
 
-module.exports = SortBalls;
+export default SortBalls;
